@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fullpage</title>
+	<script src="./jquery.min.js"></script>
+	<script src="./jquery.fullPage.min.js"></script>
+	<!-- <script src="./jquery.mousewheet.min.js"></script> -->
+	<style>
+		body{
+			margin:0;
+			padding:0;
+		}
+		section{
+			text-align: center;
+			line-height: 100%;
+			font-size: 40px;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div id="fullPage">
+		<section class="section">1</section>
+		<section class="section">2</section>
+		<section class="section">3</section>
+		<section class="section">4</section>
+		<section class="section">5</section>
+	</div>
+	
+	<script>
+	 	$("#fullPage").fullpage({
+	 		sectionsColor:["#0DA5D6","#2AB561","#DE8910","#16BA9D","#0DA5D6"]
+	 	});
+	</script>
+</body>
+</html>
