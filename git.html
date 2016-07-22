@@ -1029,4 +1029,23 @@ body .markdown-body
 <pre><code>git commit -a -m "添加注释"
 注意：新建的文件不能使用连写；只有修改的文件可以使用连写
 </code></pre>
-<h4 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>暂存区，同一个文件只会保存最新版本，不同的文件可以共存</h4></article></body></html>
+<h4 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>暂存区，同一个文件只会保存最新版本，不同的文件可以共存</h4>
+<h4 id="git-diff"><a name="user-content-git-diff" href="#git-diff" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>对比文件的变化<code>git diff</code></h4>
+<h4 id="git-reset-c-c"><a name="user-content-git-reset-c-c" href="#git-reset-c-c" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>git reset &ndash;[c]  c为参数</h4>
+<pre><code>hard head:回到上一次提交的代码
+hard head^^:回到倒数第二次提交的代码
+hard head~1:回到最近一次提交的前一次
+hard [版本号]：会退到具体的版本号
+</code></pre>
+<h4 id="gitignoregitignoregitignoregit"><a name="user-content-gitignoregitignoregitignoregit" href="#gitignoregitignoregitignoregit" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>新建一个名称为<code>.gitignore</code>文件里面写入<code>/.gitignore</code>;<code>.gitignore</code>用来告诉git哪些文件不需要被提交</h4>
+<h4 id="git-reflog"><code>git reflog</code>记录了用户的所有提交和回退;</h4>
+<pre><code>通过reset+版本号可以回到回退之前的版本。
+</code></pre>
+<hr />
+<h4 id="git_1"><a name="user-content-git_1" href="#git_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>git分支</h4>
+<pre><code>-git默认分支为master；
+-使用`git branch`可以查看默认分支
+-使用`git branch dev`新建一个名字为dev分支
+-git checkout dev 切换到dev分支
+-使用`git merge dev`把当前分支与dev分支进行合并
+</code></pre></article></body></html>
